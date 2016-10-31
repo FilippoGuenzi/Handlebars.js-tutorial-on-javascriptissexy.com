@@ -7,7 +7,7 @@
     <groupId>handlebars</groupId>
     <artifactId>re.weplay</artifactId>
     <version>1.0.0</version>
-
+    <packaging>war</packaging>
 
     <build>
         <plugins>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"/>
+        <script id="clientName" type="text/x-handlebars-template">
+            <div>Name: {{clientName}}</div>
+        </script>
+        <script id="customers" type="text/x-handlebars-template">
+            {{#each customers}}
+                <li>{{firstName}} {{lastName}}</li>
+            {{/each}}
+
+            {{#customers}}
+                <li>{{firstName}} {{lastName}}</li>
+            {{/customers}}
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

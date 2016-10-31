@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"/>
+    <script type="text/javascript">
+        var modelCustomers = {
+            customers: [
+                {firstName: "Paul", lastName: "Dirac"},
+                {firstName: "Erwin", lastName: "Schrödinger"},
+                {firstName: "Wolfgang", lastName: "Pauli"},
+                {firstName: "Enrico", lastName: "Fermi"}
+            ]
+        };
+        var modelClient = {client: {clientName: "Paul Eluard"}};
+        var modelCustomer = {customer: {customerName: "Jimi Hendrix"}};
+    </script>
+    <script id="clientName" type="text/x-handlebars-template">
+        <div>Name: {{clientName}}</div>
+    </script>
+    <script id="customers" type="text/x-handlebars-template">
+        {{#each customers}}
+        <li>{{firstName}} {{lastName}}</li>
+        {{/each}}
+
+        {{#customers}}
+        <li>{{firstName}} {{lastName}}</li>
+        {{/customers}}
+    </script>
+</head>
+<body>
+
+</body>
+</html>
