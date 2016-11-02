@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"/>
-    <script id="today" type="text/x-handlebars-template">
-        <div>{{headerTitle}}</div>
-        Today is {{weekDay}}
-    </script>
-    <script type="text/javascript">
-        var model = {headerTitle: "Day page", weekDay: "Monday"};
-        var templateContent = $("#today").html();
-        var compiledTemplate = Handlebars.compile(templateContent);
-        $("#output").innerHTML = compiledTemplate(model);
-    </script>
-</head>
-<body>
-    <div id="output"></div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="handlebars.js"></script>
+
+        <script id="today" type="text/x-handlebars-template">
+            <div>{{headerTitle}}</div>
+            Today is {{weekDay}}
+        </script>
+
+        <script type="text/javascript">
+            var model = {headerTitle: "Day page", weekDay: "Monday"};
+            var templateContent = $("#today").html();
+            var compiledTemplate = Handlebars.compile(templateContent);
+            $(document.body).append(compiledTemplate(model));
+        </script>
+
+    </head>
+    <body>
+
+    </body>
 </html>
