@@ -16,11 +16,17 @@
             var model = {headerTitle: "Day page", weekDay: "Monday"};
             var templateContent = $("#today").html();
             var compiledTemplate = Handlebars.compile(templateContent);
+
+            console.log(templateContent);
+            console.log(model);
+            console.log(compiledTemplate(model));
+
             $(document.body).append(compiledTemplate(model));
+            $("#here").innerHTML = compiledTemplate(model);
         </script>
 
     </head>
     <body>
-
+    <div id="here"></div>
     </body>
 </html>
