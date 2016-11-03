@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="handlebars.js"></script>
+
+    <script type="text/x-handlebars-template" id="shoe-template">
+        {{#each}}
+        <li class="shoes">
+            <a href="/{{name}}">{{name}} -- Price: {{price}}</a>
+        </li>
+        {{/each}}
+    </script>
+
+    <script type="text/javascript" src="main.js"></script>
+
+</head>
+<body>
+The list of shoes
+<ul class="shoesNav">
+</ul>
+</body>
+</html>
