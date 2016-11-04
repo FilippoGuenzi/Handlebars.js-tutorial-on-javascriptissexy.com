@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="handlebars.js"></script>
+
+    <!--Start : handlebars templates-->
+    <script type="text/x-handlebars-template" id="pageTitle">
+        <title>{{pageTitle}}</title>
+    </script>
+    <script type="text/x-handlebars-template" id="bodyTitle">
+        <h1>{{pageTitle}}</h1>
+    </script>
+    <script type="text/x-handlebars-template" id="sageTaxonomy">
+        <ul>
+            <li>dominio : {{dominio.nome}}</li>
+            <ul>
+                <li>regno : {{dominio.regno.nome}}</li>
+                <ul>
+                    <li>divisione : {{dominio.regno.divisione.nome}}</li>
+                    <ul>
+                        <li>classe : {{dominio.regno.divisione.classe.nome}}</li>
+                        <ul>
+                            <li>ordine : {{dominio.regno.divisione.classe.ordine.nome}}</li>
+                            <ul>
+                                <li>famiglia : {{dominio.regno.divisione.classe.ordine.famiglia.nome}}</li>
+                                <ul>
+                                    <li>sottofamiglia : {{dominio.regno.divisione.classe.ordine.sottofamiglia.nome}}</li>
+                                    <ul>
+                                        <li>tribu : {{dominio.regno.divisione.classe.ordine.sottofamiglia.tribu.nome}}</li>
+                                        <ul>
+                                            <li>genere : {{dominio.regno.divisione.classe.ordine.sottofamiglia.tribu.genere.nome}}</li>
+                                            <ul>
+                                                <li>specie : {{dominio.regno.divisione.classe.ordine.sottofamiglia.tribu.genere.specie.nome}}</li>
+                                            </ul>
+                                        </ul>
+                                    </ul>
+                                </ul>
+                            </ul>
+                        </ul>
+                    </ul>
+                </ul>
+            </ul>
+        </ul>
+
+        <h1>Notice that maximum order is 6 !!!</h1>
+    </script>
+
+
+    <!--End : handlebars templates-->
+
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+
+</body>
+</html>
