@@ -8,7 +8,7 @@
     <script type="text/javascript" src="handlebars.js"></script>
 
     <script type="text/x-handlebars-template" id="shoe-template">
-        {{#each}}
+        {{#each this}}
         <li class="shoes">
             <a href="/{{name}}">{{name}} -- Price: {{price}}</a>
         </li>
@@ -17,10 +17,14 @@
 
     <script type="text/javascript" src="main.js"></script>
 
+
 </head>
 <body>
 The list of shoes
 <ul class="shoesNav">
 </ul>
+
+
+
 </body>
 </html>
