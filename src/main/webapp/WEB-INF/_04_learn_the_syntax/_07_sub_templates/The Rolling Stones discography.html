@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Rolling Stones discography</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="handlebars.js"></script>
+    <script type="text/x-handlebars-template" id="details">
+        <ul>
+            <li>{{releaseDate}}</li>
+            <li>{{recordings}}</li>
+        </ul>
+    </script>
+    <script type="text/x-handlebars-template" id="discography">
+        <ul>
+            {{#each discs}}
+            <li>
+                {{title}}
+                {{> details}}
+            </li>
+            {{/each}}
+            </ul>
+    </script>
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+
+</body>
+</html>
