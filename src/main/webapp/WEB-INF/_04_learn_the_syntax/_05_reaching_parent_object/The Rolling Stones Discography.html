@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="handlebars.js"></script>
+    <script type="text/x-handlebars-template" id="pageTitle">
+        <title>{{pageTitle}}</title>
+    </script>
+    <script type="text/x-handlebars-template" id="bodyTitle">
+        <h1>{{bodyTitle}}</h1>
+    </script>
+    <script type="text/x-handlebars-template" id="discography">
+        <ul>
+            {{#each discs}}
+                <li>{{../composer}} - {{title}} - {{releaseDate}}</li>
+            {{/each}}
+        </ul>
+    </script>
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+
+</body>
+</html>
