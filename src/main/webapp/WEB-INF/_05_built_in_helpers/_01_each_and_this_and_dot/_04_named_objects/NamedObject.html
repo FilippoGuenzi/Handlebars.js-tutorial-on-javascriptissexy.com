@@ -7,12 +7,14 @@
     <script type="text/javascript" src="handlebars.js"></script>
     <script type="text/x-handlebars-template" id="there">
         <ul>
-            <li>{{customer.firstName}} {{customer.lastName}}</li>
+            <li>{{customer1.firstName}} {{customer1.lastName}}</li>
+            <li>{{customer2.firstName}} {{customer2.lastName}}</li>
         </ul>
     </script>
     <script type="text/x-handlebars-template" id="there4">
         <ul>
-            <li>{{#each customer}} {{this}} {{/each}}</li>
+            <li>{{#each customer1}} {{this}} {{/each}}</li>
+            <li>{{#each customer2}} {{this}} {{/each}}</li>
         </ul>
     </script>
     <script type="text/x-handlebars-template" id="there2">
