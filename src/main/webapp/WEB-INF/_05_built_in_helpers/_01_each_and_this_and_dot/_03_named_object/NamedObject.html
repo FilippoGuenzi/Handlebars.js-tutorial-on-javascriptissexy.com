@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="handlebars.js"></script>
+    <script type="text/x-handlebars-template" id="there">
+        <ul>
+            <li>{{customer.firstName}} {{customer.lastName}}</li>
+        </ul>
+    </script>
+    <script type="text/x-handlebars-template" id="there2">
+        <ul>
+            {{#each this}}
+                <li>{{firstName}} {{lastName}}</li>
+            {{/each}}
+        </ul>
+    </script>
+    <script type="text/x-handlebars-template" id="there3">
+        <ul>
+            {{#each .}}
+                <li>{{firstName}} {{lastName}}</li>
+            {{/each}}
+        </ul>
+    </script>
+    <script type="text/x-handlebars-template" id="there4">
+        <ul>
+            <li>{{#each customer}} {{this}} {{/each}}</li>
+        </ul>
+    </script>
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+
+</body>
+</html>
