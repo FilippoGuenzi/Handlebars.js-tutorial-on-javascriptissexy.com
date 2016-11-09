@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="handlebars.js"></script>
+    <script type="text/x-handlebars-template" id="if">
+        <h1>Le conseil de tester avec la longueur des Array ne semble pas concluant car même les vides s'évaluent à false</h1>
+        {{#if array1}} Array1 without length : {{#each array1}}<ul><li>{{this}}</li></ul>{{/each}}{{/if}}
+        {{#if array2}} Array2 without length : {{#each array2}}<ul><li>{{this}}</li></ul>{{/each}}{{/if}}
+        {{#if array1.length}} Array1 with length : {{#each array1}}<ul><li>{{this}}</li></ul>{{/each}}{{/if}}
+        {{#if array2.length}} Array2 with length : {{#each array2}}<ul><li>{{this}}</li></ul>{{/each}}{{/if}}
+    </script>
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+
+</body>
+</html>
