@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="handlebars.js"></script>
+    <script type="text/x-handlebars-template" id="with">
+        <h1>with is used to move temporarily the context</h1>
+        Outdoor activity : {{activities.outdoorActivity}}
+        <br />
+        {{#with recipes.sundayRecipes}}
+            main plate : {{mainPlate}}
+        {{/with}}
+    </script>
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+
+</body>
+</html>
