@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="handlebars.js"></script>
+    <script type="text/x-handlebars-template" id="tplt">
+        <ul>
+        {{#each this}}
+            {{#if this}}
+                <li>true : {{this}}</li>
+            {{else}}
+                <li>false : {{this}}</li>
+            {{/if}}
+        {{/each}}
+        </ul>
+    </script>
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+<h1>Else can also be included in unless (meaning ifNot) block</h1>
+</body>
+</html>
