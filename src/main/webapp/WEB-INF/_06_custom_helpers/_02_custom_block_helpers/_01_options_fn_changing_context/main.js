@@ -7,11 +7,13 @@ $(
         ];
 
         Handlebars.registerHelper(
-            "playerScore"
+            "for"
             , function(data, options) {
+                var template = "";
                 for(var i = 0 ; i < data.length ; i++) {
-                    options.fn(data[i]);
+                    template += options.fn(data[i]);
                 }
+                return template;
             }
         );
 

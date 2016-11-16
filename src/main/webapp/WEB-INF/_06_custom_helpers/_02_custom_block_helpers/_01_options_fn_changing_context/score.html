@@ -6,9 +6,9 @@
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="handlebars.js"></script>
     <script type="text/x-handlebars-template" id="score">
-        {{#playerScore this}}
+        {{#for this}}
             {{firstName}} {{lastName}}, your score is : {{score}}
-        {{/playerScore}}
+        {{/for}}
     </script>
     <script type="text/javascript" src="main.js"></script>
 </head>
