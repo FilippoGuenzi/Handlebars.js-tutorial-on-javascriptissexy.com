@@ -2,7 +2,7 @@ $(
     function(){
 
         var XOR = function(a, b){
-            if((a||b) && (a!==b)){
+            if(typeof a === "boolean" && typeof b === "boolean" && (a||b) && (a!==b)){
                 return true;
             } else {
                 return false;
