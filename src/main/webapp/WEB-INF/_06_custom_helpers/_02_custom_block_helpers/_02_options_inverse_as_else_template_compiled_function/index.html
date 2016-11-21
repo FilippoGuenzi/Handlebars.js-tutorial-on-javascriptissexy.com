@@ -3,6 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="handlebars.js"></script>
+    <script type="text/x-handlebars-template" id="template">
+        {{#row rows}}
+            <div style="{{style}}">
+                <h1>{{h1}}</h1>
+                <h2>{{h2}}</h2>
+                <h3>{{h3}}</h3>
+                <h4>{{h4}}</h4>
+            </div>
+        {{else}}
+            <div style="{{style}}">
+                <h4>{{h4}}</h4>
+                <h3>{{h3}}</h3>
+                <h2>{{h2}}</h2>
+                <h1>{{h1}}</h1>
+            </div>
+        {{/row}}
+    </script>
+    <script type="text/javascript" src="main.js"></script>
 </head>
 <body>
 
